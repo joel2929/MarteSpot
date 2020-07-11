@@ -26,16 +26,16 @@
       width: 100%;
     }
 
-    .next {
+    /* .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-    }
+    } */
 
     /* On hover, add a grey background color */
-    .prev:hover, .next:hover {
+    /* .prev:hover, .next:hover {
     background-color: #f1f1f1;
     color: black;
-    }
+    } */
 
     a {
       color: black;
@@ -102,7 +102,7 @@
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 40%;
   width: auto;
   padding: 16px;
@@ -110,7 +110,7 @@
   color: white;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 23px 23px 0;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -122,10 +122,10 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -167,34 +167,6 @@
 }
   
 
-
-
-
-
-/* 
-    .sidenav {
-      height: 100%;
-      width: 160px;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: rgba(255, 232, 232, 0.575);
-      overflow-x: hidden;
-      padding-top: 20px;
-    }
-
-    .sidenav a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    } */
 
     .main {
       margin-left: 160px;
@@ -242,6 +214,15 @@
   </head> -->
   
   
+  <div class="container">
+    
+    <h1>MarteSp<li><img src="img/JimmySticker_edit2.png.jpg" height="45" width="45" usemap="#jimmy" alt="black circle">
+      </li>t</h1>
+    <map name="jimmy">
+      <area shape="rect" coords="0,0,82,126" href="jimmy.html" alt="Doggy">
+    </map>
+  
+  </div>
   
   <!-- Container for the image gallery -->
   <div class="container">
@@ -289,95 +270,60 @@
   <!-- Thumbnail images -->
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="img/ruthven_outside.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="img/ruthven_outside.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ruthven Outside">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/ruthven_backyard.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="img/ruthven_backyard.jpg" style="width:100%" onclick="currentSlide(2)" alt="ruthven Backyard">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/whitman36_outside.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="img/whitman36_outside.jpg" style="width:100%" onclick="currentSlide(3)" alt="Whitman36 Outside">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/whitman36_kitchen2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="img/whitman36_kitchen2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Whitman Kitchen">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/seaver_outisde.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="img/seaver_outisde.jpg" style="width:100%" onclick="currentSlide(5)" alt="Seaver Outisde">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/seaver_kitchen.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="img/seaver_kitchen.jpg" style="width:100%" onclick="currentSlide(6)" alt="Seaver Kitchen">
     </div>
   </div>
 </div> 
 
-<div class="container">
-  
-  <h1>MarteSp<li><img src="img/JimmySticker_edit2.png.jpg" height="45" width="45" usemap="#jimmy" alt="black circle">
-    </li>t</h1>
-  <map name="jimmy">
-    <area shape="rect" coords="0,0,82,126" href="jimmy.html" alt="Doggy">
-  </map>
-
-</div>
 
 
-  <!--<h2 style="text-align:center">Multiple Slideshows</h2>
-
-   <p>Whitman 36:</p>
-  <div class="slideshow-container">
-    <div class="mySlides1">
-      <img src="img/whitman36_outside.jpg">
-    </div>
-  
-    <div class="mySlides1">
-      <img src="img/whitman36_hallway.jpg" width="50%">
-    </div>
-  
-    <div class="mySlides1">
-      <img src="img/whitman36_kitchen.jpg">
-    </div>
-  
-    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-  </div>
-  
-  <p>Ruthven 99:</p>
-  <div class="slideshow-container">
-    <div class="mySlides2">
-      <img src="img/ruthven_outside.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides2">
-      <img src="img/ruthven_side.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides2">
-      <img src="img/ruthven_backyard.jpg" style="width:100%">
-    </div>
-  
-    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-  </div> -->
 
   <script>
-    var slideIndex = [1,1];
-    var slideId = ["mySlides1", "mySlides2"]
-    showSlides(1, 0);
-    showSlides(1, 1);
-    
-    function plusSlides(n, no) {
-      showSlides(slideIndex[no] += n, no);
-    }
-    
-    function showSlides(n, no) {
-      var i;
-      var x = document.getElementsByClassName(slideId[no]);
-      if (n > x.length) {slideIndex[no] = 1}    
-      if (n < 1) {slideIndex[no] = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      x[slideIndex[no]-1].style.display = "block";  
-    }
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+} 
     </script>
 
 
