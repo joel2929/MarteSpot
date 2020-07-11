@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    html {
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      margin: 0px;
+      min-height: 100%;
+      width: 100%;
+      background-color: rgba(255, 232, 232, 0.975);
+    }
+
+    .container {
+      text-align: center;
+      padding: 10px;
+      background-size: cover;
+      color: rgb(31, 30, 30);
+      background-color: rgba(255, 232, 232, 0.575);
+      height: 100%;
+      width: 100%;
+    }
+
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+    }
+
+    a {
+      color: black;
+      max-width: 300px;
+      font-size: large;
+    }
+
+    a1 {
+      font-size: small;
+    }
+
+    b {
+      font-size: xx-large;
+    }
+
+    h1 {
+      font-size: 70px;
+      background-color: rgba(255, 232, 232, 0.575);
+      font-style: oblique;
+
+
+    }
+/* 
+    img {
+      margin: 40px 0px 0px 0px;
+      /* border: 7px solid rgba(236, 117, 117, 0.5);
+      border-radius: 10px; */
+    
+
+    ul {
+
+      background: rgba(255, 232, 232, 0.575);
+    }
+
+    li {
+      display: inline-block;
+      padding: 0px 10px 0px 10px;
+      max-width: 400px;
+    }
+
+    img {
+      max-width: 300px;
+    }
+    * {box-sizing: border-box}
+    .mySlides1, .mySlides2 {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+
+/* 
+    .sidenav {
+      height: 100%;
+      width: 160px;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 232, 232, 0.575);
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    } */
+
+    .main {
+      margin-left: 160px;
+      /* Same as the width of the sidenav */
+      font-size: 28px;
+      /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+
+    /* @media screen and (max-height: 900px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    } */
+
+    @media (max-width: 900px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+
+      li {
+        padding: 5px;
+        display: block;
+
+      }
+    }
+  </style>
+  <title>MarteSpot</title>
+</head>
+
+<body>
+
+  <!-- <head>
+
+    <div class="sidenav">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </head> -->
+  
+  <div class="container">
+    
+    <h1>MarteSp<li><img src="img/JimmySticker_edit2.png.jpg" height="45" width="45" usemap="#jimmy" alt="black circle">
+      </li>t</h1>
+    <map name="jimmy">
+      <area shape="rect" coords="0,0,82,126" href="jimmy.html" alt="Doggy">
+    </map>
+
+  </div>
+
+
+  <h2 style="text-align:center">Multiple Slideshows</h2>
+
+  <p>Whitman 36:</p>
+  <div class="slideshow-container">
+    <div class="mySlides1">
+      <img src="img/whitman36_outside.jpg">
+    </div>
+  
+    <div class="mySlides1">
+      <img src="img/whitman36_hallway.jpg" width="50%">
+    </div>
+  
+    <div class="mySlides1">
+      <img src="img/whitman36_kitchen.jpg">
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+  
+  <p>Ruthven 99:</p>
+  <div class="slideshow-container">
+    <div class="mySlides2">
+      <img src="img/ruthven_outside.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides2">
+      <img src="img/ruthven_side.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides2">
+      <img src="img/ruthven_backyard.jpg" style="width:100%">
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  </div>
+
+  <script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+
+
+
+
+
+
+
+
+  <div class="container">
+    
+    <!-- <h1>MarteSp<li><img src="img/JimmySticker_edit2.png.jpg" height="45" width="45" usemap="#jimmy" alt="black circle">
+      </li>t</h1>
+    <map name="jimmy">
+      <area shape="rect" coords="0,0,82,126" href="jimmy.htm" alt="Doggy">
+    </map> -->
+
+    <ul>
+
+      <li>
+        <h2>Thanks for your interest!</h2>
+        <br><a>Leave your information down below and we'll notify you about any open residence or other concerns.</a>
+
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
