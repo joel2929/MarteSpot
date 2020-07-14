@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jimmy</title>
+    <style>
+        body{
+            background-color: rgba(255, 232, 232, 0.975);
+        }
+        .wrapper{
+          resize: both;
+          overflow: auto;
+          font-family: 'Tangerine', serif;
+          font-size: 29px;
+          background-color: rgba(255, 232, 232, 0.975);
+          display:grid;
+          grid-template-columns: 50% 50%
+        }
+        @media (max-width: 900px) {
+            div {
+                font-size: 15px;
+                padding: 5px;
+             }
+            img{
+                size: 20px
+            }
+    }
+    </style>
 </head>
 <body>
-
-<img src="img/JimmySticker_edit2.png.jpg" height="650" align-content="center" usemap="#jimmy" alt="black circle">
+<div class="wrapper">
+    <img src="img/JimmySticker_edit2.png.jpg" height="450" align-content="center" usemap="#jimmy" alt="black circle">
+    <div>Jimmy's Birday is Oct 19.He is 6yrs old and still looks like a puppy. Weights 5lbs(barely) but he thinks he weights 300lbs.   </div>
+</div>
 <br>
-<a href="index.html">back</a>
+<a style="font-size:x-large;" href="index.html">back</a>
 </body>
 </html>
