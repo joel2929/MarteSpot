@@ -58,6 +58,10 @@
 
 
     }
+    /* form {
+      text-align: ce;
+
+    } */
 /* 
     img {
       margin: 40px 0px 0px 0px;
@@ -277,10 +281,10 @@
       <img class="demo cursor" src="img/ruthven_outside.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ruthven Outside">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/ruthven_backyard.jpg" style="width:100%" onclick="currentSlide(2)" alt="ruthven Backyard">
+      <img class="demo cursor" src="img/ruthven_backyard.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ruthven Backyard">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/whitman36_outside.jpg" style="width:100%" onclick="currentSlide(3)" alt="Whitman36 Outside">
+      <img class="demo cursor" src="img/whitman36_outside.jpg" style="width:100%" onclick="currentSlide(3)" alt="Whitman Outside">
     </div>
     <div class="column">
       <img class="demo cursor" src="img/whitman36_kitchen2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Whitman Kitchen">
@@ -338,35 +342,26 @@ function showSlides(n) {
 
 
   <div class="container">
-    
-    <!-- <h1>MarteSp<li><img src="img/JimmySticker_edit2.png.jpg" height="45" width="45" usemap="#jimmy" alt="black circle">
-      </li>t</h1>
-    <map name="jimmy">
-      <area shape="rect" coords="0,0,82,126" href="jimmy.htm" alt="Doggy">
-    </map> -->
-
     <ul>
 
       <li>
         <h2>Thanks for your interest!</h2>
         <br><a>Leave your information down below and we'll notify you about any open residence or other concerns.</a>
-
-        <form name="contact" method="POST" data-netlify="true">
+        
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
           <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
+            <label>Email: <input type="text" name="name" /></label>
           </p>
           <p>
             <label>Message: <textarea name="message"></textarea></label>
           </p>
+          <div data-netlify-recaptcha="true"></div>
           <p>
             <button type="submit">Send</button>
           </p>
         </form>
+        
       </li>
-
     </ul>
   </div>
 
