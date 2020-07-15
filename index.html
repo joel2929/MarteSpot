@@ -58,10 +58,6 @@
 
 
     }
-    /* form {
-      text-align: ce;
-
-    } */
 /* 
     img {
       margin: 40px 0px 0px 0px;
@@ -77,6 +73,7 @@
     li {
       display: inline-block;
       padding: 0px 10px 0px 10px;
+      margin-right: -8px;
       max-width: 400px;
     }
 
@@ -198,8 +195,10 @@
 
       li {
         padding: 5px;
-        display: block;
+        /* display: block; This was breaking the logo up */
+
       }
+
       .container, .row, .mySlides {
           text-align: center;
           max-width: 100%;
@@ -225,7 +224,7 @@
   
   <div class="container">
     
-    <h1>MarteSp<li><img src="img/JimmySticker_edit2.png.jpg" height="45" width="45" usemap="#jimmy" alt="black circle"></li>t</h1>
+    <h1>MarteSp<li><img src="img/JimmySticker_edit2.png.jpg" height="45" width="45" margin-left: -5px usemap="#jimmy" alt="black circle"></li>t</h1>
     <map name="jimmy">
       <area shape="rect" coords="0,0,82,126" href="jimmy.html" alt="Doggy">
     </map>
@@ -347,7 +346,7 @@ function showSlides(n) {
       <li>
         <h2>Thanks for your interest!</h2>
         <br><a>Leave your information down below and we'll notify you about any open residence or other concerns.</a>
-        
+
         <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
           <p>
             <label>Email: <input type="text" name="name" /></label>
