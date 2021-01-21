@@ -31,7 +31,10 @@ body {
   line-height: 1; }
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+  /* display: inline-block; */
+ }
+
 
 blockquote, q {
   quotes: none; }
