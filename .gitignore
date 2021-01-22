@@ -1,3 +1,4 @@
 *.txt
-img
+/img
 .gitignore
+
