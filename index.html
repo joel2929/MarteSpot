@@ -33,14 +33,23 @@
 			<input type="submit" value="Sign Up" />
 		</li>
 	</form> -->
-	<form id="signup-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+	<!-- <form id="signup-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
 		<li style="display: inline-block;">
 			<input class="hidden" type="text" name="bot-field" id="bot" placeholder="Leave blank" />
 			<input type="email" name="email" id="email" placeholder="Email Address" />
 			<textarea name="message" id="message" placeholder="Message"></textarea>
 			<input type="submit" value="Sign Up" />
 		</li>
+	</form> -->
+
+	<form name='contact' method='POST'><input type='hidden' name='form-name' value='contact' />
+		<input class="hidden" type="text" name="bot-field" id="bot" placeholder="Leave blank" />
+		<input type="email" name="email" id="email" placeholder="Email Address" />
+		<textarea name="message" id="message" placeholder="Message"></textarea>
+		<input type="submit" value="Sign Up" />
 	</form>
+	<br>
+	<br>
 
 	<!-- Footer -->
 	<footer id="footer">
