@@ -25,10 +25,18 @@
 
 	<!-- Signup Form -->
 	<!-- <form id="signup-form" method="post" action="#"> -->
-	<form id="signup-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+	<!-- <form id="signup-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
 		<li style="display: inline-block;">
 			<input type="email" name="email" id="email" placeholder="Email Address" />
 			<input type="email" name="bot-field" id="bot" placeholder="Leave blank" />
+			<textarea name="message" id="message" placeholder="Message"></textarea>
+			<input type="submit" value="Sign Up" />
+		</li>
+	</form> -->
+	<form id="signup-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+		<li style="display: inline-block;">
+			<input class="hidden" type="text" name="bot-field" id="bot" placeholder="Leave blank" />
+			<input type="email" name="email" id="email" placeholder="Email Address" />
 			<textarea name="message" id="message" placeholder="Message"></textarea>
 			<input type="submit" value="Sign Up" />
 		</li>
